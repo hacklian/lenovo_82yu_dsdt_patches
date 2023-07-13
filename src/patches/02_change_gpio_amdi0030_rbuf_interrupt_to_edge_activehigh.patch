@@ -1,0 +1,4 @@
+11754c11754
+<                     Interrupt (ResourceConsumer, Level, ActiveLow, Shared, ,, )
+---
+>                     Interrupt (ResourceConsumer, Edge, ActiveHigh, Shared, ,, )

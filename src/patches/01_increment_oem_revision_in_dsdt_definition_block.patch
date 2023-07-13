@@ -1,0 +1,4 @@
+21c21
+< DefinitionBlock ("", "DSDT", 1, "LENOVO", "AMD", 0x00001000)
+---
+> DefinitionBlock ("", "DSDT", 1, "LENOVO", "AMD", 0x00001001)
