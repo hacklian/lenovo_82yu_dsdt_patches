@@ -37,6 +37,10 @@ sudo cp dist/patched_dsdt.img /boot/patched_dsdt.img
 	- Save the configuration file and exit the text editor.
 	- Reboot your system.
 
+5. Install the Dynamic Kernel Modules from:
+- https://github.com/hacklian/lenovo_82yu_i8042-dkms
+- https://github.com/hacklian/lenovo_82yu_i2c_hid-dkms
+
 ## Contributing
 If you encounter issues or have improvements to the patches, feel free to open an issue or submit a pull request. Your contributions are welcome and appreciated.
 
