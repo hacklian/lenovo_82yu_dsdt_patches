@@ -13,26 +13,26 @@ Follow these steps to apply the DSDT patches to your Lenovo V15 G4 AMN notebook:
 
 1. Clone this repository to your local machine and change into the project directory:
 ```shell
-   git clone git@github.com:hacklian/lenovo_82yu_dsdt_patches.git
-   cd lenovo_82yu_dsdt_patches
+git clone git@github.com:hacklian/lenovo_82yu_dsdt_patches.git
+cd lenovo_82yu_dsdt_patches
 ```
 
 2. Run the provided patcher.sh bash script in the project directory:
 ```shell
-	./patcher.sh
+./patcher.sh
 ```
 
 3. Copy the generated DSDT image to the /boot folder:
 Note: You need administrative privileges when copying the patched DSDT image to the /boot directory and updating your bootloader configuration.
 ```shell
-	sudo cp dist/patched_dsdt.img /boot/patched_dsdt.img
+sudo cp dist/patched_dsdt.img /boot/patched_dsdt.img
 ```
 
 4. Update your bootloader configuration to include the patched DSDT image. The specific steps may vary depending on your bootloader. Here's an example for systemd-boot:
 	- Open your bootloader configuration file, typically located at `/boot/loader/entries/<your_entry>.conf`.
 	- Add the following line to the configuration file:
 	```shell
-		initrd /patched_dsdt.img
+	initrd /patched_dsdt.img
 	```
 	- Save the configuration file and exit the text editor.
 	- Reboot your system.
