@@ -1,3 +1,10 @@
+# Repository Archive Notice
+**Important:** These DSDT patches are now obsolete as of Linux Kernel versions `>=6.5.10` and `>=6.6.1`. It is strongly recommended to update your Linux kernel to at least these versions. Following this update, the keyboard and touchpad functionalities for Lenovo V15 G4 AMN notebooks should work without the need for additional patches.
+
+For users running older kernel versions, including most LTS Kernels up until 2026, these patches may still be used. Because of that, this repository is now being archived for future reference.
+
+It's worth noting that the official kernel patch functions differently and, notably, more effectively than the patches provided in this repository. The official fix does not necessitate DSDT patching and offers better touchpad accuracy. For users still on older kernel versions, considering the application of the official fix is recommended for optimal results. You can get more information about the offical kernel patch [here](https://bugzilla.kernel.org/show_bug.cgi?id=218003).
+
 # Lenovo V15 G4 AMN DSDT Patches for Linux
 
 This repository contains DSDT (Differentiated System Description Table) patches for the Lenovo V15 G4 AMN notebook to enable keyboard and touchpad functionality on Linux. These patches are essential for ensuring full hardware compatibility with Linux-based operating systems.
